@@ -1,0 +1,35 @@
+body{
+    background-color:rgb(22, 141, 239);
+}
+.title{
+    text-align: center;
+    color: rgb(238, 149, 144);
+}
+.input{
+    width:250px;
+    margin:5px;
+    padding:5px;
+    margin-left: 550px;
+    border-radius: 5px;
+}
+select{
+    margin:5px;
+    padding:5px;
+    border-radius: 6px;
+}
+.movie-lists{
+    text-align: center;
+    font-size: 30px;
+}
+.listings{
+    text-align: center;
+    font-size: 24px;
+    list-style: none;
+}
+.avg{
+    text-align: center;
+}
+button{
+    box-sizing: border-box;
+    width: 80px;
+}

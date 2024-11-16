@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: #FBF4FD;
+}
+.main-container{
+    width: 100%;
+    height: auto;
+
+}
+.wsaicon-container{
+    margin:25px 60px;
+}
+.wsa-icon{
+    height:50px;
+    width:150px;
+}
+.sub-container{
+      width: 100%;
+      height:100px;
+}
+.header-container{
+    float:left;
+    width:50%;
+}
+.header{
+    color: #000000;
+    font-family: "Poppins",sana-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 120px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.calculator-container{
+    float: right;
+    width: 50%;
+    height:450px;
+}
+.background-circle{
+    border-radius: 50%;
+    background-color: #F5EAF9;
+    width: 480px;
+    height: 480px;
+    /* position: relative; */
+}
+.calculator{
+    width: 300px;
+    height: 480px;
+    border: 8px solid #E2E2E2;    
+    border-radius:33px;
+    background-color: #FFFFFF;
+    position: relative;
+    bottom: 110%;
+    left:10%;
+}
+.output-field-container{
+    background-color:#F3F2F2;  
+    width: 265px;
+    height: 110px;
+    border-radius: 20px;
+    margin:12px 16px;
+}
+/* .input-field-container{
+
+} */
+.output-field, .input-field{
+    background-color:#F3F2F2;
+    width: 95%;
+    margin: 1px 3px;
+    font-size: 40px;
+    padding: 10px 5px 0px 5px;
+    border-radius: 20px;
+    border: none;
+    text-align: end;    
+}
+.output-field:focus{
+    outline: none;
+}
+input-field:focus{
+    outline: none;
+}
+.btn-row{
+    margin:auto auto auto 24px;
+
+}
+button{
+    margin:4px 5px;
+    width: 50px;
+    border-radius:10px;
+    height:50px;
+    border:none;
+    font-size: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(41, 39, 39);
+    color:#F3F2F2;
+}
+
+button :hover {
+    color:white;
+}
+.bg{
+    background-color:#FCEEBD;
+}
+.bg:hover{
+    background-color: #f8e8b0;
+}
+.zero {
+    width: 111px;
+    /* margin: 2px 5px; */
+}
+.equals-icon {
+    background-color:#FFC138;
+}
+/* .footer-name{
+    font-family: "Poppins", sans serif;
+    padding: 60px;
+    font-size: 13px;
+    text-transform: uppercase;
+} */
+
+
+
+
+
