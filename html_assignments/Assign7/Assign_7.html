@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+</head>
+<style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            background-color: #f9f7db;
+            color: #4b0082;
+        }
+        .main{
+          width: 50%;
+          background-color: #f9f7db;
+          padding-left: 350px;
+        }
+
+        table {
+            border-collapse: collapse;
+          }
+
+      td {
+            border: 2px solid #ec4040;
+        }
+        img {
+            width:100%;
+            height:120px; 
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .empty {
+            background-color: #f8f0cc;
+            width: 150px;
+            height: 100px;
+        }
+</style>
+<body>
+
+    <h2>My Image Gallery</h2>
+    <div class="main">
+       <table>
+          <tbody>
+            <!-- Row 1 -->
+            <tr>
+             <td colspan="3"><img src="1.jpeg" alt="Bird 1"></td>
+             <td><img src="2.jpeg" alt="Bird 2"></td>
+             <td class="empty"></td>
+          </tr>
+            <!-- Row 2 -->
+          <tr>
+            <td rowspan="2"><img src="3.jpeg" alt="Bird 3"></td>
+            <td rowspan="2"><img src="4.jpeg" alt="Bird 4"></td>
+            <td ><img src="5.jpeg" alt="Bird 5"/></td>
+            <td ><img src="6.jpeg" alt="Bird 6"/></td>
+            <td><img src="7.jpeg" alt="Bird 7"/></td>
+          </tr>
+            <!-- Row 3 -->
+          <tr>
+            <td ><img src="8.jpeg" alt="Bird 8"></td>
+            <td ><img src="9.jpeg" alt="Bird 9"></td>
+            <td class="empty"></td>
+          </tr>
+            <!-- Row 4 -->
+          <tr>
+            <td><img src="10.jpeg" alt="Bird 10"></td>
+            <td colspan="3"><img src="11.jpeg" alt="Bird 11"></td>
+            <td ><img src="12.jpeg" alt="Bird 12"></td>
+          </tr>
+            <!-- Row 5 -->
+          <tr>
+            <td ><img src="13.jpeg" alt="Bird 13"></td>
+            <td ><img src="14.jpeg" alt="Bird 14"></td>
+            <td colspan="3"><img src="15.jpeg" alt="Bird 15"> </td>
+          </tr>
+      </tbody>
+   </table> 
+</div>
+</body>
+</html>

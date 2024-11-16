@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 12</title>
+</head>
+<style>
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+    body{
+        display:block;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(1, 52, 52);
+        overflow: hidden;
+    }
+    .container{
+        margin:20px ;
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(1, 52, 52);
+        color:white;
+    }
+    .header{
+       padding-bottom: 15px;
+       position: absolute;
+       top: 30px;
+       left: 50%;
+       transform: translateX(-50%);
+       z-index: 2;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    tr{
+       justify-content: space-between;
+       display: flex;
+       padding: 15px;
+    }
+    .content-form{
+        border: 2px solid black;
+        width: 700px;
+       height: 500px;
+       bottom: 15px;
+       background-color: black;
+        border: 1px solid #ccc;
+        position: relative;
+        z-index: 3;
+         padding: 20px;
+    }
+    form label{
+         color: white;
+         font-weight: bold;
+         font-size: 16px;
+         padding-right: 90px;
+    }
+    form input,form textarea{
+        width: 385px;
+        padding-top:5px ;
+        height: 30px;
+       border:1px solid #ccc;
+       background-color: rgba(16, 23, 33, 255);
+    }
+    form textarea{
+        height: 120px;
+    }
+    .buttons{
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+        padding-right: 35px;
+    }
+    button{
+        color: aliceblue;
+        background-color: orange;
+        padding: 10px 35px 10px 35px;
+    }
+    .bg-circle{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+    width: 750px;
+    margin: 0 auto;
+    background-color: #1b4c4d;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    }
+    span{
+        color: orange;
+    }
+    footer{
+        position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    bottom: 1px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="font-weight: 100;">ENQUIRY FORM</h1>
+            <p>If you have any queries kindly take a moment to fill up this form, Our representatives will contact you shortly.</p>
+        </div>
+        <div class="bg-circle">
+            <div class="content-form">
+              <form action="#">
+                <table >
+                    <tbody>
+                        <tr>
+                           <td><label for="name">Your name</label></td> <br> 
+                            <td><input type="text" placeholder="Your Name"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email Address</label></td>
+                            <td><input type="email" placeholder="Mail@example.com"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="bill">Bill Number</label></td>
+                            <td><input type="text" placeholder="Bill Number"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone">Phone Number</label></td>
+                            <td><input type="text" placeholder="Your Phone Number"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="enquiry">Customer Enquiry</label></td>
+                            <td><textarea name="queries" placeholder="Your Queries"></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+             </form>
+             <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+        <footer>&copy; 2016 Enquiry Form. All Rights Reserved | Design by <span>W3Layouts</span></footer>
+    </div>
+</body>
+</html>

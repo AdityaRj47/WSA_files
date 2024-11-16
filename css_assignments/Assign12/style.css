@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+   margin:10px;
+   padding:10px; 
+   background-color: black;
+   overflow-x: hidden;
+}
+.container{
+    display: flex;
+    background-color: black;
+    gap: 30%;
+}
+img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    width:165px;
+    height:165px;
+    overflow: hidden;
+    position: relative;
+    background-color:rgba(18, 121, 239, 0.632);
+}
+.mail img{
+    width: 46px;
+    height:50px;
+    margin: 10px;
+    padding-left: 25px;
+}
+.mail{
+    display: block;
+}
+.mail p{
+    margin: 10px;
+    color: white;
+    font-size: 18px;
+}
+.create{
+    display: grid;
+    grid-template-columns: repeat(3,165px);
+    grid-template-rows: repeat(2,165px);
+    grid-gap: 10px;
+}
+.office-tools{
+    display: grid;
+    grid-template-columns: repeat(2,75px);
+    grid-template-rows: repeat(2,75px);
+    grid-gap: 10px;
+    background-color: black;
+}
+.calendar{grid-column: 1/span 1; grid-row: 1/span 1;}
+.mail{grid-column: 1span 2; grid-row: span 1; width:300px}
+.paint{grid-column: span 1; grid-row: 2/span 1;}
+.office{grid-column: 2/span 1; grid-row: span 1;}
+.office-tools{grid-column:span 1; grid-row: span 1;}
+
+.word{grid-column: span 1; grid-row: span 1;width:75px;height:75px}
+.ppt{grid-column:span 1; grid-row: span 1;width:75px;height:75px}
+.excel{grid-column: span 1; grid-row: span 1;width:75px;height:75px}
+.note{grid-column: span 1; grid-row: span 1;width:75px;height:75px}
+
+.explore{
+    margin-top: 25px;
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3,165px);
+    grid-template-rows: repeat(3,165px);
+    grid-gap: 10px;
+}
+.store{grid-column: span 2; grid-row: span 1;width:300px}
+ 
+
+.play{
+    display: grid;
+    grid-template-columns: repeat(3,165px);
+    grid-template-rows: repeat(2,165px);
+    grid-gap: 10px;
+}
+.social{
+     display: grid;
+     grid-template-columns: repeat(2,75px);
+     grid-template-rows: repeat(2,75px);
+     grid-gap: 10px; 
+    background-color: black;
+}
+.cinema{grid-column: span 1; grid-row: span 1;width:75px;height:75px}
+.o{grid-column: span 1; grid-row: span 1;width:75px;height:75px}
+.skype{grid-column: span 1; grid-row: span 1;width:75px;height:75px}
+.map{grid-column: span 1; grid-row: span 1;width:75px;height:75px}
+
+.oem{
+    margin-top: 25px;
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3,165px);
+    grid-template-rows: repeat(2,165px);
+    grid-gap: 10px;
+}
+.tools{
+    display: grid;
+     grid-template-columns: repeat(2,75px);
+     grid-template-rows: repeat(2,75px);
+     grid-gap: 10px; 
+    background-color: black;
+}
+.flower{grid-column: span 1; grid-row: span 1;width:75px;height:75px}
+.cube{grid-column: span 1; grid-row: span 1;width:75px;height:75px}
+.settings{grid-column: span 1; grid-row: span 1;width:75px;height:75px}
+.clock{grid-column: span 1; grid-row: span 1;width:75px;height:75px}
+
+h1{
+    color: white;
+    margin: 25px;
+    font-weight: 100;
+    font-size: 24px;
+}

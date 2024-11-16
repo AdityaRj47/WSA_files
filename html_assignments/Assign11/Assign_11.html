@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    header{
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+    }
+    nav ul{
+           display: flex;
+           margin-left: 35%;
+        }
+    nav ul li{
+        list-style-type: none;
+        padding: 0px 30px 0px 30px;
+    }
+    .header1{
+        margin: 10px;
+        padding:30px 100px 30px 30px;
+        text-align: center;
+    }
+    .container1{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .img-container{
+          height: 300px;
+          width: 300px;
+          object-fit: cover;
+    }
+    .img-context{
+        display: flex;
+        margin-left: 20%;
+
+    }
+    .date{
+         height: 50px;
+         width: 40px;
+         text-align: center;
+        background-color:rgb(8, 161, 100);              
+     }
+    .content{
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        width: 300px;
+        margin:0px 30px 10px 0px;
+        padding:0px 20px 10px 0px;
+    
+    }
+    .title{
+        padding: 0px 0px 20px 10px;
+     }
+     .text{
+        margin: 10px 0px 10px;
+        padding:0px 0px 15px ;
+     }
+     .cread{
+        background-color:rgb(8, 161, 100);
+        padding: 10px 0px;
+        width: fit-content;
+        color: white;
+        text-decoration: none;
+     }
+     .buttons{
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+
+     }
+     .buttons ul{
+        display: flex;
+        margin-left: 65%;
+        list-style-type: none;
+        gap: 20px;
+        padding-bottom: 25px;
+     }
+     .buttons ul li{
+        padding: 10px 10px;
+        background-color:rgb(8, 161, 100); 
+     }
+     .buttons ul li a{
+        color: white;     
+        text-decoration: none;
+     }
+     hr{
+         border: 2px solid;
+        margin-bottom: 5%;
+     }
+</style>
+<body>
+    <header>
+        <nav>
+            <h3>ADITYA</h3>
+            <ul>
+                <li>HOME</li>
+                <li>COMPONENTS</li>
+                <li>TYPE & GRID</li>
+                <li>CHARTS</li>
+                <li>BLOG</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="header1">
+        <h3>RECENT POSTS</h3>
+    </div>
+    <div class="container1">
+        <div class="img-container"><img src="bythesea.jpg" alt="sea"/></div>
+        <div class="img-context">
+            <div class="date">
+                <h3>01</h3>
+                <h3>JUL</h3>
+            </div>
+            <div class="content">
+                <div class="title"><strong>A View by the Sea</strong>
+                <p>by <strong>Paul Jarvis</strong> on <strong>Unsplash</strong></p>
+            </div>
+                <div class="text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit architecto non assumenda delectus officia ipsa impedit animi, neque minus similique ut culpa! Facilis, totam accusamus ipsa doloribus vitae suscipit?</p></div>
+                <a href="#" class="cread">Continue reading</a>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="img-container"><img width="400px" height="260px" src="manondesert.jpg" alt="deserted man"/></div>
+        <div class="img-context">
+            <div class="date">
+                <h3>25</h3>
+                <h3>JUN</h3>
+            </div>
+            <div class="content">
+                <div class="title"><strong>Man Fishing</strong>
+                <p>by <strong>Yani Kaplan Nadel</strong> on <strong>Unsplash</strong></p>
+            </div>
+                <div class="text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit architecto non assumenda delectus officia ipsa impedit animi, neque minus similique ut culpa! Facilis, totam accusamus ipsa doloribus vitae suscipit?</p></div>
+                <a href="#" class="cread">Continue reading</a>
+            </div>
+        </div>
+       
+    </div>
+    <footer>
+        <div class="buttons">
+            <ul>
+                <li><a href="#"><</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">></a></li>
+            </ul>
+        </div>
+    </footer>
+    <hr>
+</body>
+</html>

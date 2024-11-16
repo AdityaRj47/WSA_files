@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ASSIGNMENTS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            transition: background-image 0.5s ease-in-out;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: 100px auto;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0fa6f1;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        a {
+            display: block;
+            font-size: 1.2em;
+            color: #3498db;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+            text-align:center;
+            font-size: 0.9em;
+            padding: 20px;
+            position:relative;
+            bottom: 90px;
+            width: 100%;
+            color: #ecf0f1;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>CSS ASSIGNMENTS</h1> 
+        <a href="Assign1/Assign1.html" target="_self">ASSIGNMENT 1</a>
+        <a href="Assign2/Assign2.html"target="_self">ASSIGNMENT 2</a>
+        <a href="Assign3/Assign3.html"target="_self">ASSIGNMENT 3</a>
+        <a href="Assign4/Assign4.html"target="_self">ASSIGNMENT 4</a>
+        <a href="Assign5/Assign5.html"target="_self">ASSIGNMENT 5</a>
+        <a href="Assign6/Assign6.html"target="_self">ASSIGNMENT 6</a>
+        <a href="Assign7/Assign7.html"target="_self">ASSIGNMENT 7</a>
+        <a href="Assign8/Assign8.html"target="_self">ASSIGNMENT 8</a>
+        <a href="Assign9/Assign9.html"target="_self">ASSIGNMENT 9</a>
+        <a href="Assign10/Assign10.html"target="_self">ASSIGNMENT 10</a>
+        <a href="Assign11/Assign11.html"target="_self">ASSIGNMENT 11</a>
+        <a href="Assign12/Assign12.html"target="_self">ASSIGNMENT 12</a>
+        <a href="Assign13/Assign13.html"target="_self">ASSIGNMENT 13</a>
+    </div>
+
+    <footer>
+        &copy; @All Rights Reserved by AdityaRajNayak
+    </footer>
+
+    <script>
+        
+        const images = [
+            'https://wallpapers.com/images/featured/beautiful-background-td7gsxerv3ecl20h.jpg',
+            'https://t3.ftcdn.net/jpg/05/54/02/68/360_F_554026892_UsZG4Tm3GPUV6fxzlpvV0qOOe9KKYvCj.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKegvpjAtMfUr9B6dNcu5-ilPFxXyZwecj5yOou4ye_Qc07bXU68G_gqQ&s',
+            'https://t4.ftcdn.net/jpg/07/87/16/69/360_F_787166948_1YEZeLZl8XTsp6OXXK78rovNTNPC6PoC.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfdARKMCdfL-du0OtOqZdvrP7OCfpLHIwsyQ&s'
+        ];
+
+        
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+
+        
+        document.body.style.backgroundImage = `url(${randomImage})`;
+    </script>
+
+</body>
+</html>

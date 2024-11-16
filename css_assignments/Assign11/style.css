@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    grid-template-rows: repeat(8,150px);
+    grid-gap: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    padding-left: 50px;
+}
+span{
+    margin: 5px;
+    padding: 5px;
+    font-size: 28px;
+}
+
+.box {
+    background-color: #1bb1ed;
+    color: white;
+    display: flex;
+}
+
+.photoshop { grid-column: span 1 ; }
+.invision { grid-column: span 1; }
+.ux { grid-column: span 1; }
+
+.design { grid-column: 2/span 2;width: 300px;height:300px; }
+.rust{grid-column: 5/span 1;grid-row: 2/span 1;background-color: teal;}
+
+.php { grid-column: 4/span 1; grid-row: 3/span 1; background-color: teal;}
+.html { grid-column: 5/span 1; grid-row: 3/span 1; background-color: teal;}
+
+.javascript { grid-column: 2/span 1; grid-row: 4/span 1; background-color: teal; }
+.layout { grid-column: 3/span 1; grid-row: 4/span 1;}
+.webdev { grid-column: 4/span 2; grid-row: 4/span 1; background-color: teal;width: 300px;height:300px; }
+
+.ruby { grid-column: 2/span 1; grid-row: 5/span 1;background-color: teal; }
+.css { grid-column: 3/span 1;grid-row: 5/span 1;background-color: teal; }
+
+.go { grid-column: 2/span 1;grid-row: 6/span 1;background-color: teal;}
+.motion { grid-column: 3/span 2;grid-row: 6/span 1; background-color: #6A1B9A; width: 300px;height:300px; }
+.maya { grid-column: 5/span 1;grid-row: 6/span 1; background-color: #6A1B9A; }
+.nuke { grid-column: 6/span 1;grid-row: 6/span 1; background-color: #6A1B9A; } 
+
+.cinema4d { grid-column: 5/span 1; grid-row: 7/span 1;background-color: #6A1B9A; }
+.aftereffects { grid-column:4/span 1; grid-row: 8/span 1; background-color: #6A1B9A; }
+
+
+

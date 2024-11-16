@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(241, 219, 136,0.4);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header img{
+    width:150px;
+    height:150px;
+    
+}
+.header .heading h1{
+    margin: 40px;
+    width: 100%;
+}
+.header .heading h2{
+    text-align: center;
+    right: 50%;
+}
+#slno{
+    background-color: pink;
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+}
+#marksheet{
+    text-align: center;
+
+}
+#statement{
+    text-align: center;
+}
+#examyear{
+    text-decoration: underline;
+    text-align: center;
+}
+.student-details{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.student-details ul{
+    list-style: none;
+    
+}
+.student-details ul li{
+    text-align: left;
+}
+table{
+    margin: 5px;
+    width: 100%;
+    margin-bottom: 35px;
+
+}
+
+tbody{
+        text-align: center;
+        width: 100%;    
+}
+th,td{
+    border: 1px solid black;
+    padding: 8px; 
+    border-collapse: collapse;  
+}
+tfoot td{
+    text-align: center;
+}
+
+.qr_sign img{
+    width: 200px;
+    height:100px;
+}
+.qr_sign{
+    margin: 30px 20px 0px 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.qr{
+    display:block;
+    background-color: white;
+    width: 15%;
+}
+.sign{
+    display: inline;
+    background-color: rgb(255, 255, 255,0.9);
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+footer{
+    text-align: center;
+}

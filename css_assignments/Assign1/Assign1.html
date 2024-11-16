@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="main">
+        <h1>Buy Tickets to the Web Developer Gala</h1>
+        <h2>Tickets are $10 each.Dinner packages are an extra $5.All fields are required.</h2>
+
+        <div class="heading">Tickets and Add-ons</div>
+        <div class="tickets-container">
+            <div class="content">
+                <label for="number">Number of Tickets <span>Limit 8</span></label>
+               <input type="number" min="1" max="8" step="1" placeholder="1"><br>
+            </div>
+            <div class="content">
+                <label for="packages">Dinner Packages <span>Serves 2</span></label>
+                <input type="number"min="1" max="4" placeholder="1">
+            </div>
+        </div>
+
+       <div class="heading">Payment</div>
+       <div class="payment-container">
+          <div class="content">
+             <label for="ccnumber">Credit card number <span>No space or dashes,please</span></label>
+             <input type="text" placeholder="372000000000008"><br>
+          </div>
+          <div class="content">
+            <label for="expiry">Expiration date <span>MM/YYYY</span></label>
+            <input type="text" id="monthYear" oninput="formatDate(this)" placeholder="MM-YYYY">
+          </div>
+       </div>
+
+       <div class="heading">Billing Address</div>
+        <div class="billing-container">
+            <div class=""></div>
+            <div class="content">
+                <label for="name">Name</label><br>
+                <input type="text" placeholder="ex: John Q.Public" style="width: 350px;"><br>
+            </div>
+            <div class="content">
+                <label for="address">Street Address</label><br>
+                <input type="text"placeholder="ex.12345 main Street,Apt 23" style="width: 350px;"><br>
+            </div>
+            <div class="content">
+                <label for="city">City</label><br>
+                <input type="text"placeholder="ex: Anytown" style="width: 250px;"><br>
+            </div>
+            <div class="content">
+                <label for="state">State</label><br>
+                <input type="text"placeholder="CA" style="width: 50px;"><br>
+            </div>
+            <div class="content">
+                <label for="pincode">ZIP</label><br>
+                <input type="text" placeholder="12345"style="width: 60px;"><br>
+            </div>
+       </div>
+
+       <button type="submit">Buy Tickets!</button>
+    </div>
+    <script>
+        function formatDate(input) {
+            const value = input.value.replace(/\D/g, ''); // Remove any non-digit characters
+            if (value.length >= 2) {
+                // Format MM/YYYY once enough digits are entered
+                const month = value.slice(0, 2);
+                const year = value.slice(2, 6);
+                input.value = year ? `${month}/${year}` : `${month}`;
+            }
+        }
+    </script>
+</body>
+</html>

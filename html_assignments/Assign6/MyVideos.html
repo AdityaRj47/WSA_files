@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Videos</title>
+</head>
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .video-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video-card iframe {
+            width: 100%;
+            height: 180px;
+            border: none;
+        }
+        .video-content {
+            padding: 15px;
+        }
+        .video-title {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .video-description {
+            color: #666;
+            font-size: 14px;
+        }
+</style>
+<body>
+    <h1>Video Gallery</h1>
+    <div class="container">
+        <div class="video-card">
+            <img src="https://i.ytimg.com/vi/2I9eC2MRhto/maxresdefault.jpg" alt="Video 1 Poster" class="poster" onclick="playVideo(this)"/>
+            <iframe  class="video-iframe" 
+            src="https://www.youtube.com/embed/eVli-tstM5E?si=j9n4lNAMaU2dyLFq" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+            </iframe>
+            <div class="video-content">
+                <h2 class="video-title">Expresso</h2>
+                <p class="video-description">Music video by Sabrina Carpenter performing Espresso. © 2024 Island Records, a division of UMG Recordings, Inc.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://i.ytimg.com/vi/-LKzhNs4HK0/maxresdefault.jpg" alt="Video 2 Poster" class="poster" onclick="playVideo(this)"/>
+            <iframe class="video-iframe"  
+            src="https://www.youtube.com/embed/MLlSSJ0z7xM?si=bwSC8Bm4jXojrY7z" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+            <div class="video-content">
+                <h2 class="video-title">The WeekND</h2>
+                <p class="video-description">Music video by The Weeknd performing Dancing In The Flames.© 2024 The Weeknd XO Music ULC, marketed by Republic Records, a division of UMG Recordings, Inc.</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://i.ytimg.com/vi/mUr_1FNOR74/maxresdefault.jpg" alt="Video 3 Poster" class="poster" onclick="playVideo(this)"/>
+            <iframe class="video-iframe"  src="https://www.youtube.com/embed/gh3FyLT7WVg?si=w5RRd0lNxo36FyC_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-content">
+                <h2 class="video-title">Kurchi Madathapetti</h2>
+                <p class="video-description">Presenting the mass treat for the audience #Kurchimadathapetti song from the movie #GunturKaaram</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://i.ytimg.com/vi/J7ck984Qhso/sddefault.jpg?v=65799f32" alt="Video 4 Poster" class="poster" onclick="playVideo(this)"/>
+            <iframe class="video-iframe"  src="https://www.youtube.com/embed/J7ck984Qhso?si=l9g_H41g3ZuOf5NU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-content">
+                <h2 class="video-title">Ik Lamha</h2>
+                <p class="video-description">Azaan Sami Khan’s Ik Lamha starring Maya Ali, the third single from album Main Tera. 
+                    Enjoy an evocative tale of romance dedicated to the ones who got away. </p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <img src="https://c.saavncdn.com/904/Deewana-Kar-Raha-Hai-Lofi-Mix-Hindi-2022-20220705194111-500x500.jpg" alt="Video 5 Poster" class="poster" onclick="playVideo(this)"/>
+            <iframe class="video-iframe"  src="https://www.youtube.com/embed/I9cTsZKn8bY?si=4ADrRxY-H8l_iUPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-content">
+                <h2 class="video-title">Deewana kar raha hai</h2>
+                <p class="video-description">Deewana Kar Raha Hai is really a catchy song and Javed Ali's voice truly expresses the element of 'dard' and melancholy in love in it. </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function playVideo(poster) {
+            // Hide the poster image
+            poster.style.display = 'none';
+            // Show and play the corresponding iframe video
+            const iframe = poster.nextElementSibling;
+            iframe.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
